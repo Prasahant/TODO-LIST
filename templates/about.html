@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}About - My-Todo{% endblock title %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock css %}
+
+{% block body %}
+
+<div class="container my-5">
+
+    <!-- Project Title -->
+    <h1 class="text-center mb-4">About MyTodo</h1>
+
+    <p class="lead text-center">
+        <b>FlowTodo</b> is a modern task management web application designed to
+        help users organize daily activities efficiently. The system allows
+        users to create, update, and manage tasks in a simple and productive way.
+    </p>
+
+    <hr>
+
+    <!-- Mission Section -->
+    <h3 class="mt-4">Project Mission</h3>
+
+    <p>
+        In today's fast-paced digital world, productivity tools are essential.
+        FlowTodo was developed to provide a clean and simple platform for
+        managing personal tasks without unnecessary complexity.
+        The goal of this project is to combine simplicity with functionality,
+        allowing users to focus on their work instead of managing complicated
+        software.
+    </p>
+
+    <div class="row text-center my-4">
+
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <h4>⚡ Fast</h4>
+                <p>Lightweight backend powered by Flask for fast performance.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <h4>🔒 Secure</h4>
+                <p>Data stored safely using SQLite database.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Technologies Used -->
+    <h3 class="mt-4">Technologies Used</h3>
+
+    <ul class="list-group">
+
+        <li class="list-group-item"><b>Python</b> – Core backend programming language</li>
+
+        <li class="list-group-item"><b>Flask</b> – Lightweight web framework used for routing and application logic</li>
+
+        <li class="list-group-item"><b>Flask-SQLAlchemy</b> – ORM used to interact with the database</li>
+
+        <li class="list-group-item"><b>SQLite</b> – Database used for storing todo tasks</li>
+
+        <li class="list-group-item"><b>HTML5</b> – Used to structure the web pages</li>
+
+        <li class="list-group-item"><b>CSS3</b> – Used to design and style the user interface</li>
+
+        <li class="list-group-item"><b>JavaScript</b> – Adds dynamic behaviour to the application</li>
+
+        <li class="list-group-item"><b>Bootstrap</b> – Responsive front-end framework for layout and design</li>
+
+    </ul>
+
+    <hr>
+
+    <!-- Core Features -->
+    <h3 class="mt-4">Core Features</h3>
+
+    <ul>
+        <li>Add new tasks easily</li>
+        <li>Update existing tasks</li>
+        <li>Delete completed or unnecessary tasks</li>
+        <li>Store data persistently using SQLite</li>
+        <li>Responsive interface compatible with desktop and mobile devices</li>
+        <li>Simple and user-friendly task management system</li>
+    </ul>
+
+    <hr>
+
+    <!-- Screenshots -->
+    <h3 class="mt-4">Project Screenshots</h3>
+
+    <div class="row">
+
+        <div class="col-md-4 text-center">
+            <h5>Home Dashboard</h5>
+            <img src="{{ url_for('static', filename='images/home.png') }}"
+                 class="img-fluid rounded shadow"
+                 alt="Home Page">
+        </div>
+
+        <div class="col-md-4 text-center">
+            <h5>Add Task</h5>
+            <img src="{{ url_for('static', filename='images/addtodo.png') }}"
+                 class="img-fluid rounded shadow"
+                 alt="Add Todo">
+        </div>
+
+        <div class="col-md-4 text-center">
+            <h5>Update Task</h5>
+            <img src="{{ url_for('static', filename='images/update.png') }}"
+                 class="img-fluid rounded shadow"
+                 alt="Update Todo">
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Developer Section -->
+    <h3 class="mt-4">Developer</h3>
+
+    <p>
+        This project was developed as a learning project to understand modern
+        web development concepts using Flask. It demonstrates important
+        features such as routing, template rendering, database integration,
+        and CRUD (Create, Read, Update, Delete) operations.
+    </p>
+
+    <p>
+        The main objective of developing FlowTodo is to practice full-stack
+        development using Python and Flask while building a practical
+        productivity tool.
+    </p>
+
+</div>
+
+{% endblock body %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+{% endblock js %}

@@ -1,0 +1,145 @@
+/* NAVBAR STYLE */
+
+#navbar{
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* navbar when scrolling */
+
+.navbar-scrolled{
+    background: linear-gradient(90deg,#1d2671,#c33764);
+}
+
+.navbar-scrolled .nav-link{
+    color:white !important;
+}
+
+.navbar-scrolled .navbar-brand{
+    color:white !important;
+}
+
+/* navbar brand */
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.navbar-brand:hover{
+    transform:scale(1.1);
+}
+
+/* nav links */
+
+.nav-item-custom{
+    position:relative;
+    margin-right:10px;
+    transition:0.3s;
+}
+
+/* underline animation */
+
+.nav-item-custom::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:0;
+    background:#c33764;
+    transition:0.4s;
+}
+
+.nav-item-custom:hover::after{
+    width:100%;
+}
+
+/* search bar animation */
+
+.form-control{
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.form-control:focus{
+    transform:scale(1.05);
+}
+
+/* search button */
+
+.btn-outline-secondary{
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.btn-outline-secondary:hover{
+    background:#c33764;
+    color:white;
+}
+
+/* Page background */
+body{
+    background: linear-gradient(120deg,#1d2671,#c33764);
+    min-height:100vh;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container{
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Form inputs */
+.form-control{
+    border-radius:8px;
+}
+
+/* Buttons */
+.btn{
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Table styling */
+table{
+    margin-top:20px;
+}
+
+table tr{
+    transition:0.3s;
+}
+
+table tr:hover{
+    background:#f1f1f1;
+}
+
+/* Delete button */
+.btn-outline-danger:hover{
+    background:red;
+    color:white;
+}
+
+/* Update button */
+.btn-outline-success:hover{
+    background:green;
+    color:white;
+}
